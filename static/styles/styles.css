@@ -1,0 +1,314 @@
+main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  min-width: 100%;
+  max-height: 100%;
+  padding: 1rem 2rem;
+  background-color: lightyellow;
+}
+main .pageActive {
+  display: block !important;
+}
+main #login-page {
+  display: none;
+}
+main #login-page #login-form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2rem;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: aliceblue;
+  padding: 1rem 2rem;
+}
+main #login-page #login-form h1 {
+  margin-bottom: 1rem;
+}
+main #login-page #login-form #username, main #login-page #login-form #chat-btn, main #login-page #login-form #joinRoom-btn {
+  padding: 0.5rem 1rem;
+  margin-bottom: 1.5rem;
+  width: 80%;
+}
+main #login-page #login-form #chat-btn, main #login-page #login-form #joinRoom-btn {
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+}
+main #login-page #login-form #chat-btn:hover, main #login-page #login-form #joinRoom-btn:hover {
+  cursor: pointer;
+}
+main #login-page #login-form #chat-btn {
+  background-color: #166fe5;
+}
+main #login-page #login-form #joinRoom-btn {
+  background-color: #31ac47;
+}
+main #homepage {
+  display: none;
+}
+main #homepage #top-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+main #homepage #top-cont h1 {
+  color: darkslateblue;
+  display: inline-block;
+}
+main #homepage #top-cont .username {
+  display: inline-block;
+  border: 1.5px solid black;
+  background-color: darkslateblue;
+  border-radius: 5px;
+  padding: 0.2rem 0.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  outline: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+}
+main #homepage #msg_cont {
+  border: 5px solid black;
+  background-color: azure;
+  width: 100%;
+  min-height: 100px;
+  max-height: 200px;
+  border-radius: 2px;
+  padding: 1rem;
+  overflow: scroll;
+}
+main #homepage #msg_cont .join {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-height: 25px;
+  margin-bottom: 0.3rem;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.4rem;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+main #homepage #msg_cont .msg {
+  border-left: 0.5px solid darkslateblue;
+  padding-left: 0.5rem;
+}
+main #homepage #msg_cont .msg .text {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-height: 25px;
+  border: 0.5px solid darkslateblue;
+  margin-bottom: 0.3rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.4rem;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  outline: none;
+}
+main #homepage #msg_cont .msg .time {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 0.5px solid darkslateblue;
+  border-radius: 5px;
+  font-size: 0.6rem;
+  padding: 0.1rem 0.2rem;
+  margin-bottom: 0.8rem;
+  outline: none;
+}
+main #homepage #msg_input_cont {
+  width: 100%;
+  margin-top: 1rem;
+}
+main #homepage #msg_input_cont #msg_input {
+  border: 1px solid black;
+  background-color: lightcyan;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  border-radius: 2px;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+main #homepage #msg_input_cont #send_msg_btn {
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  background-color: lightblue;
+  width: 100%;
+}
+main #homepage #msg_input_cont #send_msg_btn:hover {
+  cursor: pointer;
+}
+main #joinRoom-page {
+  display: none;
+}
+main #joinRoom-page #joinRoom-form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2rem;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: aliceblue;
+  padding: 1rem 2rem;
+}
+main #joinRoom-page #joinRoom-form h1 {
+  margin-bottom: 1rem;
+}
+main #joinRoom-page #joinRoom-form #username, main #joinRoom-page #joinRoom-form #roomNum, main #joinRoom-page #joinRoom-form #joinRoom-btn {
+  padding: 0.5rem 1rem;
+  margin-bottom: 1.5rem;
+  width: 80%;
+}
+main #joinRoom-page #joinRoom-form #joinRoom-btn {
+  background-color: #166fe5;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+}
+main #joinRoom-page #joinRoom-form #joinRoom-btn:hover {
+  cursor: pointer;
+}
+main #homepage-room {
+  display: none;
+}
+main #homepage-room #top-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+main #homepage-room #top-cont h1 {
+  color: darkslateblue;
+  display: inline-block;
+}
+main #homepage-room #top-cont .username {
+  display: inline-block;
+  border: 1.5px solid black;
+  background-color: darkslateblue;
+  border-radius: 5px;
+  padding: 0.2rem 0.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  outline: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+}
+main #homepage-room #msg_cont {
+  border: 5px solid black;
+  background-color: azure;
+  width: 100%;
+  min-height: 100px;
+  max-height: 200px;
+  border-radius: 2px;
+  padding: 1rem;
+  overflow: scroll;
+}
+main #homepage-room #msg_cont .join {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-height: 25px;
+  margin-bottom: 0.3rem;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.4rem;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+main #homepage-room #msg_cont .msg {
+  border-left: 0.5px solid darkslateblue;
+  padding-left: 0.5rem;
+}
+main #homepage-room #msg_cont .msg .text {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-height: 25px;
+  border: 0.5px solid darkslateblue;
+  margin-bottom: 0.3rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.4rem;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  outline: none;
+}
+main #homepage-room #msg_cont .msg .time {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 0.5px solid darkslateblue;
+  border-radius: 5px;
+  font-size: 0.6rem;
+  padding: 0.1rem 0.2rem;
+  margin-bottom: 0.8rem;
+  outline: none;
+}
+main #homepage-room #msg_input_cont {
+  width: 100%;
+  margin-top: 1rem;
+}
+main #homepage-room #msg_input_cont #msg_input {
+  border: 1px solid black;
+  background-color: lightcyan;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  border-radius: 2px;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+main #homepage-room #msg_input_cont #send_msg_btn {
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  background-color: lightblue;
+  width: 100%;
+}
+main #homepage-room #msg_input_cont #send_msg_btn:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 700px) {
+  #login-page {
+    min-width: 700px;
+  }
+  #homepage {
+    min-width: 700px;
+  }
+  #joinRoom-page {
+    min-width: 700px;
+  }
+  #homepage-room {
+    min-width: 700px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .msg {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    min-height: 25px;
+    border-left: 0.5px solid darkslateblue;
+    margin-bottom: 0.3rem;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.4rem;
+    outline: none;
+  }
+}/*# sourceMappingURL=styles.css.map */

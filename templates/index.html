@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="../static/styles/default.css">
+    <link rel="stylesheet" href="../static/styles/styles.css">
+
+    <!-- scripts -->
+    <script type="application/javascript" src="../static/scripts/websocket_client1.js" defer></script>
+    <!-- import socket.io -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <main>
+        <div id="login-page" class="pageActive">
+            <div id="login-form">
+                <h1>Chat App</h1>
+                <input type="text" name="username" id="username" placeholder="username">
+                <button value="Chat" id="chat-btn">Join Public Chat</button>
+                <button value="Chat" id="joinRoom-btn">Join Room</button>
+            </div>
+        </div>
+
+        <div id="homepage">
+
+            <div id="top-cont">
+                <h1>Public Chat</h1>
+                <h2 class="username">
+                    forset32
+                </h2>
+            </div>
+            
+
+            <div id="msg_cont">
+                <!-- <p class="join">"User1" just connected - 01/23/2022</p>
+                <div class="msg">
+                    <p class="text">Hi, User1</p>
+                    <p class="time">01/23/2022</p>
+                </div> -->
+                
+            </div>
+        
+            <div id="msg_input_cont">
+                <textarea name="msg_input" id="msg_input" rows="1" placeholder="Enter Message Here..."></textarea>
+                <input type="submit" name="send_msg_btn" id="send_msg_btn" value="Send">
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
